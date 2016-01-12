@@ -1,4 +1,26 @@
-# coding: utf-8 
+# coding: utf-8
+
+def hasSeries(password):
+    """
+    renvoie True si le password contient une série de 3
+    lettres consécutives et False sinon
+    """
+    pass
+
+def hasTwoPairs(password):
+    """
+    renvoie True si le password contient deux paires non superposées
+    de caractères et False sinon.
+    """
+    pass
+
+def hasNoBadChar(password):
+    """
+    renvoie False si le password contient un caractère interdit,
+    et True sinon.
+    """
+    pass
+
 def getNext(password):
     """
     Série de tests exprimés en doctest
@@ -37,3 +59,4 @@ def getNext(password):
 if __name__ == "__main__":
     import unittest
     unittest.main()
+
