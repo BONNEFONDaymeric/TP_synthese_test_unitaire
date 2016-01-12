@@ -1,3 +1,15 @@
 VAUDAINE Quentin
 BONNEFOND Aymeric
 DASI 1
+
+Question 1.4)
+
+Selon nous, voici une liste de choses pouvant faire planter ce code :
+* On arrive à avoir un mot de passe composé uniquement de 'z' -> l'index du tableau devient alors negatif.
+*Si on se met à utiliser des carateres non compris entre 'a' et 'z', on ne satisfait plus les conditions de test.
+*Le module doctest n'est pas installé.
+*Si l'utilisateur fourni une chaine vide en parametre d'entrée de la fonction.
+
+Question 2.3)
+Pour un mot de passe de longueur N, il y a 26^N possibilités.
+

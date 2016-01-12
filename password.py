@@ -12,6 +12,10 @@ def getNext(password):
     pwd = list(password)  #1 Création d'une liste qui contiendra les lettres d'un mot de passe.
     found = False
     i=len(pwd)-1
+    if i<0:
+        raise ValueError("Mot de passe d'entrée trop court")
+    if password == len(pwd)*'z':
+        raise ValueError("Mot de passe d'entrée trop 'haut'")
 
     while not found:
         if pwd[i] < 'z':
@@ -20,7 +24,8 @@ def getNext(password):
            found = True             
         else:
             pwd[i] = 'a'
-            i = i-1 
+            i = i-1
+            
     
     return ''.join(pwd) #3 On renvoi une chaine de caracteres composée des lettes de la liste pwd(aucun séparateur).
 
@@ -30,5 +35,5 @@ def getNext(password):
 # Si vous ne voulez plus que les tests s'exécutent, commentez les deux lignes ci-dessous. 
 # Si vous préférez lancer vos tests à la main, commentez également les lignes, et utilisez "python -m doctest pass.py" en console. 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    import unittest
+    unittest.main()
